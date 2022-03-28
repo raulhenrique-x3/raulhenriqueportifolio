@@ -1,0 +1,506 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Aqui começam as estilizações da tag <header>*/
+
+.navMenu{
+    display: none;
+    flex-direction: column;
+    background-color: rgb(32, 32, 32, 0.9);
+    box-shadow: 2px 2px rgb(20, 20, 20);
+    position: absolute;
+    z-index: 1;
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.navMenu:hover{
+    transition: ease-in 0.5s;
+}
+
+.menuSettings{
+    margin: 1vw;
+    background-image: url(./Imagens/interfaceSettingMenu.PNG);
+    position: absolute;
+    z-index: 2;
+    position: fixed;
+}
+
+.menuExit{
+    display: none;
+    margin: 1vw;
+    background-image: url(./Imagens/iconClose.PNG);
+    position: absolute;
+    z-index: 2;
+    position: fixed;
+}
+
+.menuSettings:hover{
+    box-shadow: 0 0 100px #ff0000;
+    transition: ease-in-out 0.5s;
+    padding: 15px;
+}
+
+
+.menuExit, 
+.menuSettings, 
+.iconsSettings, 
+.linkedinProf,
+.eMail,
+.whatsAppIcon{
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    background-color: #ce3535;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+}
+
+.linkedinProf:hover,
+.iconsSettings:hover,
+.eMail:hover,
+.whatsAppIcon:hover{
+    width: 60px;
+    height: 60px;
+    transition: ease-in-out 0.5 s;
+    box-shadow: 0 0 70px #ff0000;
+}
+
+ul{
+    font-family: 'Inter', sans-serif;    
+    font-size: 1.5rem;
+    list-style: none;
+    margin-top: 12vh;
+}
+
+li{
+    color: #ce3535;
+    cursor: pointer;
+    margin-bottom: 30%;
+    margin-left: 3vw;
+}
+
+li:hover{
+    padding: 10px;
+    color: #000000;
+    background: #ff0000;
+    transition: 300ms ease-in;
+    font-size: 1.7rem;
+    box-shadow: 0 0 70px #ff0000;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.socialButtons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iconsSettings{
+    background-image: url(./Imagens/iconDeveloperGitHub.PNG);
+}
+.linkedinProf{
+    background-image: url(./Imagens/linkedinIcon.PNG);
+}
+.eMail{
+    background-image: url(./Imagens/emailActionIcon.PNG);
+}
+
+.whatsAppIcon{
+    background-image: url(./Imagens/whatsAppIcon.PNG);
+}
+/*Aqui acabam as estilizações da tag <header>*/
+
+/*AQUI INICIA O HOME*/
+body{
+    background-color: #000000;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Imagens/programingScreen.gif);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    z-index: -1;
+    position: absolute;
+    filter: blur(10px);
+}
+
+.photoDiv{
+    background-image: url(./Imagens/myPhoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;    
+    width: 10vw;
+    height: 21vh;
+}
+
+.pInfo{
+    font-size: 2rem;
+    text-shadow: #d15353 2px 2px;
+    color: #ffffff;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.pInfo:hover{
+    transition: 1s ease-in;
+    color: #ffffff;
+    cursor: pointer;
+    text-shadow: 0 0 7px #ff0000,
+    0 0 10px #ff0000,
+    0 0 21px #ff0000,
+    0 0 42px #ff0000,
+    0 0 82px #ff0000,
+    0 0 92px #ff0000,
+    0 0 102px #ff0000,
+    0 0 151px #ff0000;
+}
+
+.downloadCv{
+    color: #000000;
+    cursor: pointer;
+    background: #942b2b ;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 25px;
+    font-family: 'Inter', sans-serif;
+}
+.downloadCv:hover{
+    padding: 10px;
+    color: #000000;
+    background: #ff0000;
+    transition: 300ms ease-in;
+    font-size: 1.7rem;
+    box-shadow: 0 0 70px #ff0000;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*AQUI ACABA O HOME*/
+
+/* AQUI COMEÇA O QUEM SOU EU */
+.sectionAboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionIm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    border: #a7a7a7 2px solid;
+    width: 90vw;
+    height: 90vh;
+    background-color: #141414;
+}
+
+.sectionIm h1, 
+.sectionIm h2{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Inter', sans-serif;    
+    text-shadow: #942b2b 3px 3px;
+    font-size: 1.2rem;
+}
+
+/* AQUI ACABA O QUEM SOU EU */
+
+/* AQUI COMEÇA O PORTIFÓLIO */
+
+.portifolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+h1{
+    color: #ffffff;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 2rem;
+}
+
+.workIcons{
+    width: 95%;
+    height: 90vh;
+    box-shadow: #ffffff 2px 2px;
+    background-color: #222222;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: 1%;
+    padding: 20px;
+}
+
+.portBox{
+    width: 100%;
+    height: 100%;
+    background: #ff000580;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.portBox p{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1%;
+    font-family: 'Inter', sans-serif;    
+    text-shadow: #942b2b 3px 3px;
+}
+
+.acaiDoRaul{
+    background-image: url(./Imagens/Açai-do-Raul.png);
+    background-position: center;
+}
+
+.goldenDuelist{
+    background-image: url(./Imagens/goldenDuelist.png);
+    background-position: center;
+}
+
+.parallaxSite{
+    background-image: url(./Imagens/loginPage.png);
+    background-position: center;
+}
+
+.richardBarberShop{
+    background-image: url(./Imagens/richardLeaoBarbershop.png);
+    background-position: center;
+}
+
+.goldenDuelist, 
+.acaiDoRaul, 
+.parallaxSite, 
+.richardBarberShop{
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    background-position: center;
+    width: 90%; 
+    height: 30%;
+    cursor: pointer;
+}
+
+.buttonLink{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    width: 100%;
+}
+
+#webLink, #codLink{
+    border: none;
+    background: #222222;
+    cursor: pointer;
+    padding: 10px;
+    color: #ffffff;
+    margin: 10%;
+    font-size: 1rem;
+    border-radius: 25px;
+}
+
+#webLink:hover, #codLink:hover{
+    padding: 10px;
+    color: #000000;
+    background: #ff0000;
+    transition: 0.5s ease-in;
+    font-size: 1.1rem;
+    box-shadow: 0 0 70px #ff0000;
+}
+
+/* Contatos */
+.contatos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.contatosLinks{
+    width: 80%;
+    height: 40vh;
+    background-color: #ff000580;
+    border-radius: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contatosLinks p{
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;    
+    text-shadow: #942b2b 3px 3px;
+}
+
+
+
+
+/* Media Queries */
+
+@media (min-width: 320px) and (max-width: 425px){
+
+
+    .navMenu{
+        width: 50%;
+        height: 100%;
+    }
+
+    .photoDiv{
+        width: 30%;
+    }
+    
+    .pInfo{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .downloadCv{
+        padding: 3px;
+    }
+
+    .downloadCv p{
+        font-size: 10px;
+    }
+
+    .sectionAboutMe{
+        width: 100%;
+        height: 20%;
+    }
+
+    .sectionAboutMe img{
+        width: 150px;
+    }
+    .sectionAboutMe h1, .sectionAboutMe h2{
+        font-size: 0.85rem;
+    }
+
+    .workIcons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portBox{
+        width: 100%;
+        height: 20%;
+        margin-top: 5%;
+    }
+
+    .goldenDuelist, 
+    .acaiDoRaul, 
+    .parallaxSite, 
+    .richardBarberShop{
+        width: 80%;
+        height: 60%;
+    }
+    
+    .p1, .p2, .p3, .p4{
+        display: none;
+    }
+
+    #webLink, #codLink{
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+
+}
+
+@media (width: 768px){
+    
+    .navMenu{
+        width: 30%;
+        height: 100%;
+    }
+
+    .photoDiv{
+        width: 20%;
+    }
+    
+    .pInfo{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .downloadCv{
+        padding: 15px;
+    }
+
+    .downloadCv p{
+        font-size: 1rem;
+    }
+
+    .sectionAboutMe{
+        width: 100%;
+        height: 20%;
+    }
+
+    .sectionAboutMe img{
+        width: 250px;
+    }
+    .sectionAboutMe h1, .sectionAboutMe h2{
+        font-size: 1.5rem;
+    }
+
+    .workIcons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+    }
+
+
+    .portBox{
+        height: 70%;
+    }
+
+    .goldenDuelist, 
+    .acaiDoRaul, 
+    .parallaxSite, 
+    .richardBarberShop{
+        width: 80%;
+        height: 60%;
+    }
+    
+    .p1, .p2, .p3, .p4{
+        display: none;
+    }
+
+    #webLink, #codLink{
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+
+
+}

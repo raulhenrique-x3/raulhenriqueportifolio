@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Tajawal:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./Imagens/atomicSymbol.png" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Front-End Dev - Raul Henrique</title>
+</head>
+<body>
+    <header>
+        <button class="menuSettings" onclick="menuClick()"></button>
+        <button class="menuExit" onclick="menuExit()"></button>
+        <div class="navMenu" onmouseover="buttonView()">
+                <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#aboutMe"><li>Quem sou eu</li></a>
+                    <a href="#portifolio"><li>Portifólio</li></a>
+                    <a href="#contatos"><li>Contatos</li></a>
+                </ul>
+            <div class="socialButtons">
+                <a href="http://www.github.com/raulhenrique-x3"><button class="iconsSettings"></button></a>
+                <a href="https://www.linkedin.com/in/raul-henrique-92ab7021b/"><button class="linkedinProf"></button></a>
+                <a href="mailto:raulheri43@hotmail.com"><button class="eMail"></button></a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container" id="home"></div>
+
+    <section>
+        <div class="photoDiv"><span></span></div>
+            <p class="pInfo">
+                Olá! Meu nome é Raul e eu sou um Desenvolvedor Front-End Junior.
+            </p>
+            <a href="./Imagens/Currículo_Raul_Henrique_Front_End.pdf" download><div class="downloadCv"><p>Baixar Currículo</p></div></a>
+    </section>
+
+
+    <section class="sectionAboutMe" id="aboutMe">
+        <div class="sectionIm" data-aos="fade-up" data-aos-duration="2500">
+            <img class="myFace" src="./Imagens/meLogoMod.png" alt="myPhoto" >
+            <div class="textInfo">
+                    <h1>Quem sou eu?</h1>
+                <br>
+                    <h2>Eu me chamo Raul Henrique, tenho 22 anos, sou bastante criativo e apaixonado por tecnologia!
+                <br>
+                        
+                            Estudante da área de Desenvolvimento Front-End, procuro minha primeira oportunidade como trainee ou júnior
+                            para poder me firmar minha carreira na área. Atualmente tenho estudado HTML, CSS, JavaScript, Bootstrap e Jquery.
+                            
+                        </h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="portifolio">
+        <h1 class="sectionH1" id="portifolio">Portifólio</h1>
+            <div class="workIcons" data-aos="fade-right" data-aos-duration="2000">
+
+                        <div class="portBox" data-aos="flip-left" data-aos-duration="2000">
+                            <div class="acaiDoRaul"></div>
+                                <p class="p1">
+                                    Fiz esse website inspirado em uma açaiteria do meu bairro!
+                                    Foi onde eu apliquei pela primeira vez meus estudos sobre javaScript e layout responsivo.
+                                    E também onde eu aprimorei o meu conhecimento com display e flexbox, criando uma página em grid. 
+                                </p>
+                                <div class="buttonLink">
+                                    <a href="https://raulhenrique-x3.github.io/Acai-do-Raul/index.html"><button id="webLink">Website</button></a>
+                                    <a href="https://github.com/raulhenrique-x3/Acai-do-Raul"><button id="codLink">Código</button></a>
+                                </div>
+                        </div>
+                    
+
+                        <div class="portBox" data-aos="flip-left" data-aos-duration="2200">
+                            <div class="goldenDuelist"></div>
+                                <p class="p2">
+                                    Sou um entusiasta do cardgame Yu-Gi-Oh! e decidi criar esse website com a ideia de lançar as 
+                                    novidades sobre torneios, decks e tudo o que acontece nesse meio. 
+                                    Fiz o site aplicando meus conhecimentos em HTML, CSS E JavaScript e também apliquei responsividade.
+                                </p>
+                                <div class="buttonLink">
+                                    <a href="https://raulhenrique-x3.github.io/goldenduelist/index.html"><button id="webLink">Website</button></a>
+                                    <a href="https://github.com/raulhenrique-x3/goldenduelist"><button id="codLink">Código</button></a>
+                                </div>
+                        </div>
+                        <div class="portBox" data-aos="flip-left" data-aos-duration="2300">
+                            <div class="parallaxSite"></div>
+                                <p class="p3">
+                                    Criei essa página de login com um efeito parallax para treinar meu desempenho em CSS e JavaScript.
+                                    Essa página também possue funções aplicadas na opção "Registre-se" e no botão cancelar.
+                                    Também apliquei a responsividade para versatilizar o acesso.
+                                </p>
+                                <div class="buttonLink">
+                                    <a href="https://raulhenrique-x3.github.io/parallaxpage/index.html"><button id="webLink">Website</button></a>
+                                    <a href="https://github.com/raulhenrique-x3/parallaxpage"><button id="codLink">Código</button></a>
+                                </div>
+                        </div>                    
+                        <div class="portBox" data-aos="flip-left" data-aos-duration="2400">
+                            <div class="richardBarberShop"></div>
+                                <p class="p4">
+                                    Página criada para divulgar o trabalho de um barbeiro! Foi a primeira onde eu apliquei funções de Jquery
+                                    afim de animar o scroll na página, também utilizei Bootstrap na criação do carrossel da galeria e, futuramente
+                                    pretendo colocar um formulário de contato.
+                                </p>
+                                <div class="buttonLink">
+                                    <a href="https://raulhenrique-x3.github.io/RL-BARBERSHOP/"><button id="webLink">Website</button></a>
+                                    <a href="https://github.com/raulhenrique-x3/RL-BARBERSHOP"><button id="codLink">Código</button></a>
+                                </div>
+                        </div>
+            </div>
+
+            
+    </div>
+    <div class="contatos" id="contatos" data-aos="zoom-in" data-aos-duration="2000">
+        <h1 class="contatosH1">Contatos</h1>
+        <div class="contatosLinks">
+            <a href=""><div class="linkedinProf"></div></a>
+            <a href=""><div class="iconsSettings"></div></a>
+            <a href="mailto:raulheri43@hotmail.com"><div class="eMail"></div></a>
+            <a href="https://wa.me/5581986838081"><div class="whatsAppIcon"></div></a>
+        </div>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>
