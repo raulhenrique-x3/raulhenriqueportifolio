@@ -441,7 +441,7 @@ h1{
 
 }
 
-@media (min-width: 533px){
+@media (width: 538px){
     
     .navMenu{
         width: 30%;
