@@ -20,7 +20,7 @@
     <header>
         <button class="menuSettings" onclick="menuClick()"></button>
         <button class="menuExit" onclick="menuExit()"></button>
-        <div class="navMenu" onmouseover="buttonView()">
+        <div class="navMenu" onclick="buttonView()">
                 <ul>
                     <a href="#home"><li>Home</li></a>
                     <a href="#aboutMe"><li>Quem sou eu</li></a>
@@ -43,32 +43,31 @@
             <p class="pInfo">
                 Olá! Meu nome é Raul e eu sou um Desenvolvedor Front-End Junior.
             </p>
-            <a href="./Imagens/Currículo_Raul_Henrique_Front_End.pdf" download><div class="downloadCv"><p>Baixar Currículo</p></div></a>
+            <a href="./public/Currículo_Raul_Dev_Front_End.pdf" download><div class="downloadCv"><p>Baixar Currículo</p></div></a>
     </section>
 
 
     <section class="sectionAboutMe" id="aboutMe">
-        <div class="sectionIm" data-aos="fade-up" data-aos-duration="2500">
+        <h1>Quem sou eu?</h1>
+        <div class="sectionIm">
             <img class="myFace" src="./Imagens/meLogoMod.png" alt="myPhoto" >
+            
             <div class="textInfo">
-                    <h1>Quem sou eu?</h1>
+                <h2>Com 22 anos, sou bastante criativo e apaixonado por tecnologia!
                 <br>
-                    <h2>Com 22 anos, sou bastante criativo e apaixonado por tecnologia!
-                <br>
-                        
-                            Estudante da área de Desenvolvimento Front-End, procuro minha primeira oportunidade como trainee ou júnior
-                            para poder me firmar minha carreira na área. Atualmente tenho estudado HTML, CSS, JavaScript, Bootstrap e Jquery.
-                            
-                        </h2>
+                Estudante da área de Desenvolvimento Front-End, procuro minha primeira oportunidade como trainee ou júnior
+                para poder me firmar minha carreira na área. Já trabalhei em projetos como Freelancer e atualmente estou 
+                disponível para novos desafios no mercado de trabalho.
+                </h2>
             </div>
         </div>
     </section>
 
     <div class="portifolio">
         <h1 class="sectionH1" id="portifolio">Portifólio</h1>
-            <div class="workIcons" data-aos="fade-right" data-aos-duration="2000">
+            <div class="workIcons">
 
-                        <div class="portBox" data-aos="flip-left" data-aos-duration="2000">
+                        <div class="portBox">
                             <div class="acaiDoRaul"></div>
                                 <p class="p1">
                                     Fiz esse website inspirado em uma açaiteria do meu bairro!
@@ -82,7 +81,7 @@
                         </div>
                     
 
-                        <div class="portBox" data-aos="flip-left" data-aos-duration="2200">
+                        <div class="portBox">
                             <div class="goldenDuelist"></div>
                                 <p class="p2">
                                     Sou um entusiasta do cardgame Yu-Gi-Oh! e decidi criar esse website com a ideia de lançar as 
@@ -94,7 +93,7 @@
                                     <a href="https://github.com/raulhenrique-x3/goldenduelist"><button id="codLink">Código</button></a>
                                 </div>
                         </div>
-                        <div class="portBox" data-aos="flip-left" data-aos-duration="2300">
+                        <div class="portBox">
                             <div class="parallaxSite"></div>
                                 <p class="p3">
                                     Criei essa página de login com um efeito parallax para treinar meu desempenho em CSS e JavaScript.
@@ -106,7 +105,7 @@
                                     <a href="https://github.com/raulhenrique-x3/parallaxpage"><button id="codLink">Código</button></a>
                                 </div>
                         </div>                    
-                        <div class="portBox" data-aos="flip-left" data-aos-duration="2400">
+                        <div class="portBox">
                             <div class="richardBarberShop"></div>
                                 <p class="p4">
                                     Página criada para divulgar o trabalho de um barbeiro! Foi a primeira onde eu apliquei funções de Jquery

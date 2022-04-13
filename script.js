@@ -5,14 +5,16 @@
     }
     //////********************************************************//////
 
-    //Função para ocultar o navbar ao clicar no botão//
+    //Função para ocultar o navbar ao clicar no botão e função para trocar os botões//
     let menuHidden = document.querySelector('.menuSettings')
+
+
         menuHidden.addEventListener("click", hiddenMenuButton)
 
         function hiddenMenuButton(){
             menuHidden.style.display = "none"
 
-        let menuExit = document.querySelector('.menuExit').style.display = "flex"
+            let menuExit = document.querySelector('.menuExit').style.display = "flex"
             
             if(menuHidden.style.display = "none"){
                 menuExit
@@ -22,10 +24,11 @@
         function menuExit(){
             
             navMenu.style.display = "none"   
-            if(navMenu.style.display = "none"){
-                menuHidden.style.display = "flex"
-                if(menuHidden.style.display = "flex"){
-                    document.querySelector('.menuExit').style.display = "none"
+                if (navMenu.style.display = "none"){
+                    menuHidden.style.display = "flex";
+
+                if (menuHidden.style.display = "flex"){
+                    document.querySelector('.menuExit').style.display = "none";
                 }
             }
 
@@ -51,11 +54,13 @@
     navMenu.addEventListener("mouseout", hiddenNavMenu)
 
     function hiddenNavMenu(){
+
         navMenu.style.display = "none"
             if(navMenu.style.display = "none"){
                 document.querySelector('.menuSettings').style.display = "flex"
-                if(document.querySelector('.menuSettings').style.display = "flex"){
-                    document.querySelector('.menuExit').style.display = "none"
+
+            if(document.querySelector('.menuSettings').style.display = "flex"){
+                document.querySelector('.menuExit').style.display = "none"
                 }
             }
     }
@@ -63,9 +68,9 @@
     
 
 //*ScrollRevealSectionAbout*//
-ScrollReveal().reveal('.sectionAboutMe', {delay: 550});
-ScrollReveal().reveal('.myFace', {delay: 650});
-ScrollReveal().reveal('.textInfo', {delay: 750});
+// ScrollReveal().reveal('.sectionAboutMe', {delay: 550});
+// ScrollReveal().reveal('.myFace', {delay: 650});
+// ScrollReveal().reveal('.textInfo', {delay: 750});
 
 
 //*ScrollRevealPortifólio*//
@@ -95,7 +100,6 @@ $('.navMenu a[href^="#"]').on('click', function(e) {
         scrollTop: targetOffset - 15
     }, 500);
 });
-
 
 
 
