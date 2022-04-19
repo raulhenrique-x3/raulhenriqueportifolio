@@ -68,9 +68,9 @@
     
 
 //*ScrollRevealSectionAbout*//
-// ScrollReveal().reveal('.sectionAboutMe', {delay: 550});
-// ScrollReveal().reveal('.myFace', {delay: 650});
-// ScrollReveal().reveal('.textInfo', {delay: 750});
+ScrollReveal().reveal('.sectionAboutMe', {delay: 550});
+ScrollReveal().reveal('.myFace', {delay: 650});
+ScrollReveal().reveal('.textInfo', {delay: 750});
 
 
 //*ScrollRevealPortifólio*//
