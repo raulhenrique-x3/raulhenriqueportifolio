@@ -305,11 +305,29 @@ h1{
     background-position: center;
 }
 
+.todoList{
+    background-image: url(./Imagens/toDoList.png);
+    background-position: center;
+}
+
+.ygoApi{
+    background-image: url(./Imagens/ygoApi.png);
+    background-position: center;
+}
+
+.gitHubApi{
+    background-image: url(./Imagens/gitHubApi.png);
+    background-position: center;
+}
+
 .goldenDuelist, 
 .acaiDoRaul, 
 .parallaxSite, 
 .richardBarberShop,
-.sistemaCRUD{
+.sistemaCRUD,
+.todoList,
+.ygoApi,
+.gitHubApi{
     background-repeat: no-repeat;
     background-size: 100%; 
     background-position: center;
